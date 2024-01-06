@@ -1,0 +1,76 @@
+{
+    "site_id": 21,  # 平台ID
+    # "site_url": "http://ip-api.com/json/?lang=zh-CN ",  # todo 指定平台 URL 必填
+    "site_url": "https://www.browserscan.net/",  # todo 指定平台 URL 必填
+    "color": "#{:02x}{:02x}{:02x}".format(*[random.randint(0, 255) for _ in range(3)]),  # 将随机颜色
+    "name": secrets.token_hex(2),  # todo 随机配置名称
+    "note": "",  # 备注
+    "group_id": 23661,  # 群组ID 默认selenium
+    "username": "",  #
+    "password": "",  #
+    "cookie": "",  #
+    "proxy_config": {
+        "proxy_mode": 2,  # 代理模式 2好像是自定义
+        "proxy_id": "",  # 代理ID
+        "proxy_type": "http",  # 直连：direct   socks5 http https  ssh
+        "proxy_ip": "210.231.186.71",
+        "proxy_port": "3470",
+        "proxy_user": "",
+        "proxy_password": "",
+        "ip_detection": "0",
+        # # 是否每次获取最新IP的国家、时区、坐标等（非动态IP不需要） 0：关闭 1：开启 默认：0
+        "traffic_package_ip_policy": 'false',
+        # IP 策略 false：保持 IP 不变（5~60 分钟） true：每次打开配置文件时获取新 IP 默认：false 当 proxy_mode 为 1 时生效
+        "is_bypass": "0",  # 旁路列表 0：关闭 1：打开 默认：0
+        "bypass_list": "*.example1.com\nwww.example2.com"  # 哪些域名不使用代理
+    },
+    # https://www.ixbrowser.com/doc/v2/local-api/en?target_id=a81eb170-444e-4ebf-8b77-0cb702f24c07
+    "fingerprint_config": {
+        "hardware_concurrency": "4",  # CPU Parameter  Default：4
+        "device_memory": "8",  # Memory Parameters Default：8
+        "ua_type": 1,  # 1: PC 2: Mobile Phone Default: 1
+        "platform": "Windows",  # 当系统的ua_type为1时，仅支持Windows/Macos；当ua_type为2时，仅支持Android/IOS
+        "br_version": "114-without-f12",  # 浏览器版本
+        "ua_info": "",  # UserAgent
+        # UA Details
+        "language_type": 1,  # 语言类型 1：根据访问 IP 生成 2：自定义 默认：1
+        "language": "",  # 语言 cn
+        "timezone_type": 1,  # 时区类型 1：根据访问 IP 生成 2：自定义 默认：1
+        "timezone": "",  # Asia/Shanghai
+        "location": 1,  # 地理位置类型 1：询问 2：允许 3：禁用 默认值：1
+        "location_type": 1,  # 是否开启地理位置 0：自定义 1：根据访问IP生成 默认：1
+        "longitude": 25.7247,  # 经度
+        "latitude": 119.3712,  # 纬度
+        "accuracy": 1000,  # 默认精度
+        "resolving_power_type": "1",  # 分辨率类型 1：跟随设备 2：自定义 默认：1（系统类型为移动设备时不支持自定义）
+        "resolving_power": "1920,1080",  # Resolution
+        "fonts_type": 1,  # 字体 1：系统默认 2：自定义 默认：1
+        "fonts": [],  # 字体列表
+        "webrtc": 1,  # WebRTC 1: Replace 2: True 3: Disable Default: 1
+        "webgl_image": 1,  # WebGL image 0: off 1: random Default: 1
+        "canvas_type": 1,  # Canvas 0: Close 1: Random Default: 1
+        "webgl_data_type": 1,  # WebGL Metadata 1: Random 2: Custom Default: 1  如果手动就下面这种
+        "webgl_factory": "Google Inc.",  # Vendor Please refer to the WebGL Metadata Appendix for details.
+        "webgl_info": "ANGLE (AMD, ATI Radeon HD 4200 Direct3D9Ex vs_3_0 ps_3_0, atiumd64.dll-8.14.10.678)",
+        "audio_context": 1,  # AudioContext 0: Close 1: Random Default: 1
+        "media_equipment": 1,  # Media Device 0: off 1: random Default: 1
+        "client_rects": 1,  # Noise 0: Off 1: Random Default: 1
+        "speech_voices": 1,  # SpeechVoices 0: Off 1: Random Default: 1
+        "device_name_source": 1,  # 0：当前计算机的设备名称 1：随机 默认：1
+        "track": 1,  # Do Not Track 0:off 1:default  2:on
+        "allow_scan_ports": 0,  # Port Scan Protection 0: off 1: on Default: 0
+        "allow_scan_ports_content": ""  # 端口扫描范围 范围是1到65535。多个端口之间用逗号（半角）分隔，例如：4000,4001
+    },
+    "preference_config": {
+        "cookies_backup": "0",  # todo  云备份 cookie 0：关闭 1：打开 默认：1 建议关闭,不然打开关闭都慢
+        "extra_tab_source": "0",  # todo 建议关闭，不然慢得无法
+        # 标签管理 0: 每次打开特定 URL
+        # 1: 从上次关闭的配置文件中打开选项卡
+        # 默认: 0 (云备份 cookie 关闭状态下不支持从上次关闭的配置文件中打开选项卡)
+        "open_url": "",  # 新page打开指定的URL（\t\n分割）  gitee.com\t\nwww.baidu.com
+        "block_image": 0,  # 禁止加载图片 0:关闭 1:打开 默认：0
+        "block_audio": 0,  # 禁止声音 0:关闭 1:打开 默认：0
+        "dark_mode": 0,  # 深色模式  0:关闭 1:打开 默认：0
+    }
+}
+
