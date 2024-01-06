@@ -65,7 +65,7 @@
         # 默认: 0 (云备份 cookie 关闭状态下不支持从上次关闭的配置文件中打开选项卡)
         "open_url": "",  # 新page打开指定的URL（\t\n分割）  gitee.com\t\nwww.baidu.com
         "block_image": 0,  # 禁止加载图片 0:关闭 1:打开 默认：0
-        "block_audio": 0,  # 禁止声音 0:关闭 1:打开 默认：0
+        "block_audio": 1,  # 禁止声音 0:关闭 1:打开 默认：0
         "dark_mode": 0,  # 深色模式  0:关闭 1:打开 默认：0
     }
 }
