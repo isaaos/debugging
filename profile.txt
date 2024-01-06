@@ -1,9 +1,7 @@
 {
     "site_id": 21,  # 平台ID
     # "site_url": "http://ip-api.com/json/?lang=zh-CN ",  # todo 指定平台 URL 必填
-    "site_url": "https://www.browserscan.net/",  # todo 指定平台 URL 必填
-    #"color": "#{:02x}{:02x}{:02x}".format(*[random.randint(0, 255) for _ in range(3)]),  # 将随机颜色
-    #"name": secrets.token_hex(2),  # todo 随机配置名称
+    "site_url": "chrome://settings/help",  # todo 指定平台 URL 必填
     "note": "",  # 备注
     "group_id": 23661,  # 群组ID 默认selenium
     "username": "",  #
