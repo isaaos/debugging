@@ -8,18 +8,18 @@
     "password": "",  #
     "cookie": "",  #
     "proxy_config": {
-		"proxy_mode": 2,  # 代理模式 2自定义
-		"proxy_type": "direct",  # 直连：direct   socks5 http https  ssh
-		"proxy_ip": "",
-		"proxy_port": "",
-		"proxy_user": "",
-		"proxy_password": "",
-		"is_bypass": 0,  # 旁路列表 0：关闭 1：打开 默认：0
-		"bypass_list": "*.example1.com\nwww.example2.com",  # 哪些域名不使用代理
-		"ip_detection": 0,
-		# # 是否每次获取最新IP的国家、时区、坐标等（非动态IP不需要） 0：关闭 1：开启 默认：0
-		"traffic_package_ip_policy": 'false',
-		# IP 策略 false：保持 IP 不变（5~60 分钟） true：每次打开配置文件时获取新 IP 默认：false 当 proxy_mode 为 1 时生效
+        "proxy_mode": 2,  # 代理模式 2自定义
+        "proxy_type": "direct",  # 直连：direct   socks5 http https  ssh
+        "proxy_ip": "",
+        "proxy_port": "",
+        "proxy_user": "",
+        "proxy_password": "",
+        "is_bypass": 0,  # 旁路列表 0：关闭 1：打开 默认：0
+        "bypass_list": "*.example1.com\nwww.example2.com",  # 哪些域名不使用代理
+        "ip_detection": '0',
+        # # 是否每次获取最新IP的国家、时区、坐标等（非动态IP不需要） 0：关闭 1：开启 默认：0
+        "traffic_package_ip_policy": 'false',
+        # IP 策略 false：保持 IP 不变（5~60 分钟） true：每次打开配置文件时获取新 IP 默认：false 当 proxy_mode 为 1 时生效
     },
     # https://www.ixbrowser.com/doc/v2/local-api/en?target_id=a81eb170-444e-4ebf-8b77-0cb702f24c07
     "fingerprint_config": {
@@ -70,4 +70,3 @@
         "dark_mode": 0,  # 深色模式  0:关闭 1:打开 默认：0
     }
 }
-
