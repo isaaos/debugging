@@ -15,7 +15,7 @@
             "proxy_user": "",
             "proxy_password": "",
             "is_bypass": "0",  # 旁路列表 0：关闭 1：打开 默认：0
-            "bypass_list": "*.example1.com\nwww.example2.com"  # 哪些域名不使用代理
+            "bypass_list": "*.example1.com\nwww.example2.com",  # 哪些域名不使用代理
         "ip_detection": "0",
         # # 是否每次获取最新IP的国家、时区、坐标等（非动态IP不需要） 0：关闭 1：开启 默认：0
         "traffic_package_ip_policy": 'false',
