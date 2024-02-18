@@ -1,0 +1,38 @@
+{'hardware_concurrency': '8',  # CPU参数 默认：4
+                   'device_memory': '16',  # /内存参数 默认：8
+                   'ua_type': 1,  # 系统类型 1:PC 2:手机 默认：1
+                   'platform': 'Windows',  # 系统 ua_type为1时仅支持Windows /Macos，ua_type为2时仅支持Android/IOS
+                   'br_version': '120',  # 浏览器版本 详情参阅枚举变量附录
+                   'ua_info': 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.200 Safari/537.36',
+                   # UA详情
+                   'kernel_version': '114-without-f12',  # 内核版本 0:自动匹配 102:102内核 114:114内核 114-without-f12:114内核禁用f12功能
+                   'language_type': '1',  # 语言类型 1:基于访问IP生成 2:自定义 默认：1
+                   'language': 'cn',  # 语言 详情参阅语言附录
+                   'timezone_type': '1',  # 时区类型 1: 基于访问IP生成 2:自定义 默认：1
+                   'timezone': 'Asia/Shanghai',  # 时区 详情参阅时区附录
+                   'location': '1',  # 地理位置类型 1:询问 2:允许 3:禁用 默认：1
+                   'location_type': '1',  # 是否打开地理位置 0:自定义 1:基于访问IP生成 默认：1
+                   'longitude': 25.7247,  # 经度
+                   'latitude': 119.3712,  # 纬度
+                   'accuracy': 1000,  # 默认精度
+                   'resolving_power_type': '1',  # 分辨率类型 1:跟随设备 2:自定义 默认：1 （系统类型为手机时不支持自定义）
+                   'resolving_power': '1920,1080',  # 分辨率
+                   'fonts_type': '1',  # 字体 1:系统默认 2:自定义 默认：1
+                   'fonts': [],  # 字体列表 详情参阅字体附录
+                   'webrtc': '1',  # webrtc 1:替换 2:真实 3:禁用 默认：1
+                   'webgl_image': '1',  # webgl图像 0:关闭 1:随机 默认：1
+                   'canvas_type': '1',  # Canvas 0:关闭 1:随机 默认：1
+                   'webgl_data_type': '1',  # webgl元数据 1:随机 2:自定义 默认：1
+                   'webgl_factory': 'Google Inc.',  # 厂商 详情参阅WebGL元数据附录
+                   'webgl_info': 'ANGLE (AMD, ATI Radeon HD 4200 Direct3D9Ex vs_3_0 ps_3_0, atiumd64.dll-8.14.10.678)',
+                   # 渲染 详情参阅WebGL元数据附录
+                   'audio_context': '1',  # AudioContext 0:关闭 1:随机 默认：1
+                   'media_equipment': '1',  # 媒体设备 0:关闭 1:随机 默认：1
+                   'client_rects': '1',  # 噪音 0:关闭 1:随机 默认：1
+                   'speech_voices': '1',  # SpeechVoices 0:关闭 1:随机 默认：1
+                   'device_name_source': '1',  # 设备名称来源 0:每个浏览器使用当前电脑的设备名称 1:随机 2:自定义 默认：1
+                   'device_name': '',  # 设备名称   设备名称来源为2时生效
+                   'track': '1',  # Do Not Track 0:关闭 1:默认 2:开启
+                   'allow_scan_ports': '0',  # 端口扫描保护 0:关闭 1:开启 默认：0
+                   'allow_scan_ports_content': ''  # 端口扫描保护列表 为整数，范围从 1 到 65535，多个端口则用逗号（半角）分开，示例：4000,4001
+                   }
