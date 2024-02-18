@@ -5,4 +5,5 @@
 'block_image': '0',  # 禁止加载图片 0:关闭 1:开启 默认：0
 'block_audio': '0',  # 禁止播放声音 0:关闭 1:开启 默认：0
 'load_profile_info_page': '0'  # 加载窗口信息页 0:关闭 1:开启 默认：1
-#'open_url': 'gitee.com\t\nwww.baidu.com',  # 打开指定网址,通过换行进行分割 }
+'open_url': '',  # 打开指定网址,通过换行进行分割  gitee.com\t\nwww.baidu.com
+}
