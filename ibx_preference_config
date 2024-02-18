@@ -2,7 +2,7 @@
                          'indexed_db_backup': '0',  # 同步Indexed DB 0:关闭 1:开启 默认：0（云备份cookie开启时生效）
                          'local_storage_backup': '0',  # 同步Local Storage 0:关闭 1:开启 默认：0（云备份cookie开启时生效）
                          'extra_tab_source': '0',  # 标签管理 0:每次打开特定网址 1:打开关闭前的标签页  默认：0 （云备份cookie关闭状态不支持打开关闭前的标签页）
-                         'open_url': 'gitee.com\t\nwww.baidu.com',  # 打开指定网址,通过换行进行分割
+                         #'open_url': 'gitee.com\t\nwww.baidu.com',  # 打开指定网址,通过换行进行分割
                          'block_image': '0',  # 禁止加载图片 0:关闭 1:开启 默认：0
                          'block_audio': '0',  # 禁止播放声音 0:关闭 1:开启 默认：0
                          'load_profile_info_page': '0'  # 加载窗口信息页 0:关闭 1:开启 默认：1
