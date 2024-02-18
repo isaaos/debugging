@@ -4,19 +4,18 @@
     'os': 'Win32',  # 为navigator.platform值 Win32 | Linux i686 | Linux armv7l | MacIntel，当ostype设置为IOS时，设置os为iPhone，ostype为Android时，设置为 Linux i686 || Linux armv7l
     'version': '',  # 浏览器版本
     'userAgent': '',
-    'timeZone': '',  # 时区
+    'isIpCreateTimeZone': True, # 是否基于IP生成对应的时区
+    'isIpCreatePosition': True, #  是否基于IP生成对应的地理位置
+    'isIpCreateLanguage': True, #  是否基于IP生成对应国家的浏览器语言
+    'isIpCreateDisplayLanguage': True,  # 是是否基于IP生成对应国家的浏览器界面语言
+    'displayLanguages': '', #  isIpCreateDisplayLanguage 为false时设置，默认为空，即跟随系统，值参考附录
     'timeZoneOffset': 0,  # 时区偏移量
-    'isIpCreateTimeZone': True,  # 时区
     'webRTC': '0',  # webrtc 0|1|2
     'position': '1',  # 地理位置 0|1|2
     'isIpCreatePosition': True,  # 位置开关
     'lat': '',  # 经度
     'lng': '',  # 纬度
     'precisionData': '',  # 精度米
-    'isIpCreateLanguage': False,  # 语言开关
-    'languages': 'en-US',  # 默认系统
-    'isIpCreateDisplayLanguage': False,  # 显示语言默认不跟随IP
-    'displayLanguages': '',  # 默认系统
     'resolutionType': '0',  # 分辨
     'resolution': '',
     'fontType': '0',  # 字体生成类型
