@@ -1,0 +1,52 @@
+{
+    'coreVersion': '118',
+    'ostype': 'PC',  # 操作系统平台 PC|Android|IOS
+    'os': 'Win32',  # 为navigator.platform值 Win32 | Linux i686 | Linux armv7l | MacIntel，当ostype设置为IOS时，设置os为iPhone，ostype为Android时，设置为 Linux i686 || Linux armv7l
+    'version': '',  # 浏览器版本
+    'userAgent': '',
+    'timeZone': '',  # 时区
+    'timeZoneOffset': 0,  # 时区偏移量
+    'isIpCreateTimeZone': True,  # 时区
+    'webRTC': '0',  # webrtc 0|1|2
+    'position': '1',  # 地理位置 0|1|2
+    'isIpCreatePosition': True,  # 位置开关
+    'lat': '',  # 经度
+    'lng': '',  # 纬度
+    'precisionData': '',  # 精度米
+    'isIpCreateLanguage': False,  # 语言开关
+    'languages': 'en-US',  # 默认系统
+    'isIpCreateDisplayLanguage': False,  # 显示语言默认不跟随IP
+    'displayLanguages': 'en-US',  # 默认系统
+    'resolutionType': '0',  # 分辨
+    'resolution': '',
+    'fontType': '0',  # 字体生成类型
+    'font': '',  # 字体
+    'canvas': '0',  # canvas
+    'canvasValue': None,  # canvas 噪音值 10000 - 1000000
+    'webGL': '0',  # webGL
+    'webGLValue': None,  # webGL 噪音值 10000 - 1000000
+    'webGLMeta': '0',  # 元数据
+    'webGLManufacturer': '',  # 厂商
+    'webGLRender': '',  # 渲染
+    'audioContext': '0',  # audioContext
+    'audioContextValue': None,  # audioContext噪音值 1 - 100 ，关闭时默认10
+    'mediaDevice': '0',  # mediaDevice
+    'mediaDeviceValue': None,  # mediaDevice 噪音值，修改时再传回到服务端
+    'speechVoices': '0',  # Speech Voices，默认随机
+    'speechVoicesValue': None,  # peech Voices 值，修改时再传回到服务端
+    'hardwareConcurrency': '4',  # 并发数
+    'deviceMemory': '8',  # 设备内存
+    'doNotTrack': '1',  # doNotTrack
+    'portScanProtect': '',  # port
+    'portWhiteList': '',
+    'colorDepth': '32',
+    'devicePixelRatio': '1.2',
+    'openWidth': 1280,
+    'openHeight': 1000,
+    'ignoreHttpsErrors': True,  # 忽略https证书错误
+    'clientRectNoiseEnabled': False,  # 默认关闭
+    'clientRectNoiseValue': 0,  # 关闭为0，开启时随机 1 - 999999
+    'deviceInfoEnabled': False,  # 设备信息，默认关闭
+    'computerName': '',  # deviceInfoEnabled 为true时，设置
+    'macAddr': ''  # deviceInfoEnabled 为true时，设置
+}
