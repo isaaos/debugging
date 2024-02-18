@@ -3,7 +3,7 @@
                    'ua_type': 1,  # 系统类型 1:PC 2:手机 默认：1
                    'platform': 'Windows',  # 系统 ua_type为1时仅支持Windows /Macos，ua_type为2时仅支持Android/IOS
                    'br_version': '120',  # 浏览器版本 详情参阅枚举变量附录
-                   'ua_info': 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.200 Safari/537.36',
+                   'ua_info': 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                    # UA详情
                    'kernel_version': '114-without-f12',  # 内核版本 0:自动匹配 102:102内核 114:114内核 114-without-f12:114内核禁用f12功能
                    'language_type': '1',  # 语言类型 1:基于访问IP生成 2:自定义 默认：1
