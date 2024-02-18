@@ -16,7 +16,7 @@
     'isIpCreateLanguage': False,  # 语言开关
     'languages': 'en-US',  # 默认系统
     'isIpCreateDisplayLanguage': False,  # 显示语言默认不跟随IP
-    'displayLanguages': 'en-US',  # 默认系统
+    'displayLanguages': '',  # 默认系统
     'resolutionType': '0',  # 分辨
     'resolution': '',
     'fontType': '0',  # 字体生成类型
